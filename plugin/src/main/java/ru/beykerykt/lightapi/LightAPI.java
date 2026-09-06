@@ -113,6 +113,23 @@ public class LightAPI extends JavaPlugin implements Listener {
 //		craftbukkit.getVersions().put("v1_16_R3", CraftBukkit_v1_16_R3.class);
 		craftbukkit.getVersions().put("v1_17_R1", CraftBukkit_v1_17_R1.class);
 		craftbukkit.getVersions().put("v1_18_R1",CraftBukkit_v1_18_R1.class);
+		// Support for Paper 1.19-1.21.11 using v1_18_R1 implementation
+		craftbukkit.getVersions().put("1_19", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_19_1", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_19_2", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_19_3", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_20", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_20_1", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_20_2", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_20_3", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_20_4", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_20_5", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_21", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_21_1", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_21_2", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_21_3", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_21_4", CraftBukkit_v1_18_R1.class);
+		craftbukkit.getVersions().put("1_21_11", CraftBukkit_v1_18_R1.class);
 		ServerModManager.registerServerMod(craftbukkit);
 	}
 
