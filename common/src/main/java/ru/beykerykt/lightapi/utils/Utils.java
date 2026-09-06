@@ -31,7 +31,18 @@ import java.util.regex.Pattern;
 public class Utils {
 
 	public static String serverVersion() {
-		return Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3];
+		String packageName = Bukkit.getServer().getClass().getPackage().getName();
+		String[] parts = packageName.split("\\.");
+		
+		// Paper 1.20+ usa un formato diferente
+		if (parts.length == 3) {
+			// Para Paper moderno, obtener la versión de Bukkit directamente
+			String bukkitVersion = Bukkit.getBukkitVersion();
+			return bukkitVersion.split("-")[0].replaceAll("\\.", "_");
+		}
+		
+		// Fallback para versiones antiguas
+		return parts.length > 3 ? parts[3] : parts[parts.length - 1];
 	}
 
 	public static String serverName() {
