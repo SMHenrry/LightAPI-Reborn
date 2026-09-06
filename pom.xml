@@ -49,9 +49,7 @@
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/IMrMDX/LightAPI-Reborn</url>
-      <id>papermc</id>
-      <url>https://repo.papermc.io/repository/maven-public/</url>
-    </repository>
+        </repository>
     </distributionManagement>
 
 </project>
